@@ -2,12 +2,12 @@
 	--fondoNav: #3c3333;
 }
 
-*{
+*{/*costum standar*/
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-.menuNav{
+.menuNav{ /*cambia el fondo de color del navbar*/
     background-color: var(--fondoNav);
 }

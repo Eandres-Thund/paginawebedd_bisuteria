@@ -8,12 +8,7 @@ import React from 'react';
 //Componentes
 import Titulopag from '../titulopag/Titulopag';
 import Menu from '../menu/Menu';
-
 import Imagenes from './imagenes/Imagenes';
-
-import Slider from './slider/Slider';
-import Servicios from './servicios/Servicios';
-
 import Foto from './foto/Foto';
 import Footer from '../footer/Footer';
 

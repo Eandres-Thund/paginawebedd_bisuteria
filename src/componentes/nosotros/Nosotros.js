@@ -1,8 +1,15 @@
+/***************************************/
+/*********** Importaciones *************/
+/***************************************/
+
+//Propias de react
 import React from 'react';
- 
+
+//Componentes
+import Titulopag from '../titulopag/Titulopag';
 import Menu from '../menu/Menu';
-import Jumbotron from './jumbotron/Jumbotron'; // Este Componente lo crearé a continuación 
-import Detalles from './detalles/Detalles'; // Este Componente lo crearé a continuación 
+import Parrafo from './parrafo/Parrafo';
+import Foto from '../home/foto/Foto';
 import Footer from '../footer/Footer';
  
  
@@ -14,12 +21,28 @@ class Nosotros extends React.Component {
  
 			<>
  
-			<Menu />
+			<Titulopag /> {/*Se llama al componente Titulopag*/}
+
+			<div className= "container" style={{padding: '0 300px 0 300px',}}> {/*Se da un estilo de padding para volver mas pequeña la barra del menu*/}
+				
+				<Menu /> {/*Se llama al componente Menu*/}
+							
+			</div>
  
-			<main role="main" className="flex-shrink-0 mt-5">
-		        
-				<Jumbotron /> {/*Este Componente lo crearé a continuación*/}
-				<Detalles /> {/*Este Componente lo crearé a continuación*/}
+			<main role="main" className="flex-shrink-0 mt-5"> {/*flex-shrink, especifica el factor de contracción de un flex item.*/}
+
+				<div className="container" style={{padding: '0 60px 0 60px',}}> {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
+					<div className= "row"> {/*se crea segunda clase hija de container*/}
+						<div className="col-lg-6 mt-2"> {/*Se crea la primera columna que va a contener el parrafo de nosotros*/}
+							<Parrafo /> {/*Se llama al componente Parrafo*/}
+						</div>
+
+						<div className="col-lg-6"> {/*Se crea la segunda columna que va a contener la foto de nosotros*/}
+							<Foto /> {/*Se llama al componente Foto*/}
+						</div>
+
+					</div>
+				</div>
  
 	  		</main>
  
@@ -33,4 +56,4 @@ class Nosotros extends React.Component {
  
 }
  
-export default Nosotros
+export default Nosotros;

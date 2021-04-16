@@ -1,0 +1,16 @@
+/*Importamos tipos de fuentes desde googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Satisfy&display=swap');
+
+*{ /*costum standar*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.fuente{ /*costum del parrafo*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400; 
+    text-align: justify;
+    letter-spacing: 0.35px; /*Espaciado de letra*/ 
+    color: #4e4e4d; /*Very dark grayish yellow.*/
+}
