@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Satisfy&display=swap');
+
+:root { /*variables*/
+	--fondoTitulo: #3c3333;
+	--letraTitulo: #91eeff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+
+.container .titulo{
+   text-align: center;
+   background-color: var(--fondoTitulo);
+   color: var(--letraTitulo);
+   letter-spacing: 0.35px; /*Espaciado de letra*/    
+   transition: .5s ease all;
+}
+
+.container .titulo:hover{
+    background-color: var(--letraTitulo);
+    color: var(--fondoTitulo);
+}
+
+.container .titulo h1{
+    font-family: 'Satisfy', cursive;
+    font-size: 500%
+
+}
+
+.container .titulo h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 150%;
+    font-weight: 700; 
+
+}
+
+/*Font size en la etiqueta y font family  ;*/

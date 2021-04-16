@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Titulopag from '../titulopag/Titulopag';
 import Menu from '../menu/Menu';
 import Slider from './slider/Slider';
 import Servicios from './servicios/Servicios';
@@ -14,7 +15,9 @@ class Home extends React.Component {
 
 			<>
 
-			<Menu />
+			<Titulopag />
+
+			{/*<Menu />*/}
 
 			<main role="main" className="flex-shrink-0 mt-5">
 
