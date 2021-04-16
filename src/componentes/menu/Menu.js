@@ -13,6 +13,7 @@ class Menu extends React.Component {
   		<nav className="navbar navbar-expand-md navbar-dark menuNav">
 
 		    <div className="collapse navbar-collapse" id="navbarCollapse">
+				
 			    <ul className="navbar-nav mx-auto">
 
 			        <li className="nav-item">
