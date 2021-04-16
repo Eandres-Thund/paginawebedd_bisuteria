@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Satisfy&display=swap');
 
 :root { /*variables*/
-	--fondoTitulo: #3c3333;
-	--letraTitulo: #91eeff;
+	--letraTitulo: #3c3333;
+	--fondoTitulo: #91eeff;
 }
 
 *{
     padding: 0;
     margin: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
 }
 
 .container .titulo{

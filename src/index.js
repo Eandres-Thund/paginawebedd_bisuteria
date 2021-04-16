@@ -13,6 +13,8 @@ import Nosotros from './componentes/nosotros/Nosotros';
 import Servicios from './componentes/servicios/Servicios';
 import Contacto from './componentes/contacto/Contacto';
 
+import Galeria from './componentes/galeria/Galeria';
+
 
 // Configuración de la rutas del Sitio Web 
 ReactDOM.render(  
@@ -25,6 +27,10 @@ ReactDOM.render(
           component = { Nosotros }/> 
           <Route path = '/servicios'
           component = { Servicios }/>
+
+          <Route path = '/galeria'
+          component = { Galeria }/>
+
           <Route path = '/contacto'
           component = { Contacto }/>
         </Switch> 

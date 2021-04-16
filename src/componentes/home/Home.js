@@ -7,6 +7,8 @@ import Servicios from './servicios/Servicios';
 import Footer from '../footer/Footer';
 
 
+
+
 class Home extends React.Component {
 
 	render() {
@@ -17,13 +19,18 @@ class Home extends React.Component {
 
 			<Titulopag />
 
-			{/*<Menu />*/}
+			<div className= "container" style={{padding: '0 300px 0 300px',}}>
+				
+				<Menu />
+							
+			</div>
 
 			<main role="main" className="flex-shrink-0 mt-5">
 
 		        <div className="container">
 		  	  		
-		  	  		<Slider />
+		  	  		{/*<Slider />*/}
+					
 		  	  		<Servicios />
 
 		  	  		<hr className="featurette-divider" /> {/*Linea del footer*/}

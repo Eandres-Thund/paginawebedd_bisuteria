@@ -1,0 +1,13 @@
+:root { /*variables*/
+	--fondoNav: #3c3333;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.menuNav{
+    background-color: var(--fondoNav);
+}
