@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Satisfy&display=swap');
+
+
+*{ /*costum standar*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+	scroll-behavior: smooth; /*Hace que al presionar cualquier link en el temario no salte si no que se desplace*/
+}
+
+.contenido .post p { /*llama la etiqueta p que esta en la clase contenido creada en html, que esta a su vez dentro de la etiqueta main */
+	margin-bottom: 20px;	/*margen abajo*/
+	line-height: 30px;	/*altura linea*/
+	color: #525151; /*color fuente : Very dark grayish red.*/
+    text-align: justify;
+}
+
+.contenido .post .tituloSub { /*agrega la clase titulo que esta dentro de la etiqueta main y la clase contenido*/
+    font-family: 'Montserrat', sans-serif; /*cambia la fuente de letra*/
+	font-weight: normal; /*ancho de fuente normal*/
+	padding-top: 40px;	/*achica solo la parte de arriba*/
+}

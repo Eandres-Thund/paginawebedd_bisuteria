@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700&family=Satisfy&display=swap');
+
+
+*{ /*costum standar*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a { /*Se usa en los links del aside*/
+	text-decoration: none; /* se usa para establecer el formato de texto a subrayado (underline) 
+							  y suprarrayado (overline), tachado (line-through) o parpadeo (blink)*/
+	outline: none; /*es una forma reducida para establecer una o más de las propiedades individuales de contorno*/
+}
+
+a:hover { /*Se usa en los links del aside*/
+	text-decoration: underline;
+}
+
+aside {
+	margin: 40px 20px 20px 0;	/*margenes: top | right | bottom | left*/
+	height: auto; /*altura del bloque contenedor*/
+	background: #3c3333;/*color de fondo*/
+	padding: 20px; /*achica el espacio en todos los lados del contenedor*/
+	border-radius: 3px; /*realiza un ligero radio en el borde*/
+
+	/*hasta lo anterior dejaba pegado el aside*/
+	position: sticky;
+	top: 20px;
+
+}
+
+aside .tituloAs { /*crea una clase titulo que se encuentra dentro de la etiqueta aside*/
+	font-family: 'Montserrat', sans-serif; /*Da nuevos fuente de letra*/
+	font-weight: normal;	/*ancho de fuente normal*/
+	font-size: 24px;	/*tamaño de la fuente de letra*/
+	margin-bottom: 20px;	/*margen en la parte inferior por cada titulo*/
+	color: #f2f2f2;		/*Pone color de letra: Very light gray */
+    letter-spacing: 0.35px; /*Espaciado de letra*/  
+}
+
+aside .indice a {
+	display: block; /*Coloca el modo display en bloque*/
+	margin-bottom: 10px; /*margen en la parte inferior por cada elemento a */
+	color: #FFCD48; /*color de letra: Light Orange*/
+    letter-spacing: 0.35px; /*Espaciado de letra*/  
+}

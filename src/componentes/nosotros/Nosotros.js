@@ -46,7 +46,7 @@ class Nosotros extends React.Component {
  
 	  		</main>
  
-	  		<Footer />
+	  		<Footer /> {/*Se llama al componente Footer*/}
  
 	  		</>
  

@@ -19,7 +19,8 @@ class Parrafo extends React.Component{
                tertia res haec est, quod si cui forte legeris, sis licet usque malus, non odiosus eris. <br/> 
                Te conuiua leget mixto quincunce, sed ante incipiat positus quam tepuisse calix.
                Esse tibi tanta cautus breuitate uideris? <br/>
-               |Ei mihi, quam multis sic quoque longus eris!</p>
+               |Ei mihi, quam multis sic quoque longus eris!
+            </p>
         );
     };
 }
