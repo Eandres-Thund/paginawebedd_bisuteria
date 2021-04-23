@@ -9,7 +9,6 @@ import React from 'react';
 import Titulopag from '../titulopag/Titulopag';
 import Menu from '../menu/Menu';
 import Parrafo from './parrafo/Parrafo';
-import Foto from '../home/foto/Foto';
 import Footer from '../footer/Footer';
  
  
@@ -38,7 +37,7 @@ class Nosotros extends React.Component {
 						</div>
 
 						<div className="col-lg-6"> {/*Se crea la segunda columna que va a contener la foto de nosotros*/}
-							<Foto /> {/*Se llama al componente Foto*/}
+							<img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto Nosotros"/>
 						</div>
 
 					</div>

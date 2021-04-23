@@ -19,7 +19,6 @@ class Aside extends React.Component{ //Componente para ubicar los indices de ser
 						<a href="#/servicios#servicio-1">Servicio #1</a> {/*llama la etiqueta a de la funcion indice del styleAside.css*/}
 						<a href="#">Servicio #2</a>
 						<a href="#">Servicio #3</a>
-						<a href="#">Servicio #4</a>
 					</nav>
 			</aside>
         );
