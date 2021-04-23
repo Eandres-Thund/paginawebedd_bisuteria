@@ -23,7 +23,7 @@ class Menu extends React.Component { //Componente para crear el navbar ppal
 			    <ul className="navbar-nav mx-auto"> {/*Se cambia mr- por mx- para centrar horizontalmente*/}
 
 			        <li className="nav-item">
-			          	<NavLink to="/" className="nav-link">Home </NavLink>
+			          	<NavLink to="/" className="nav-link">Home</NavLink>
 			        </li>
 			        <li className="nav-item">
 			        	<NavLink to="/nosotros" className="nav-link">Nosotros</NavLink>
@@ -31,11 +31,11 @@ class Menu extends React.Component { //Componente para crear el navbar ppal
 			        <li className="nav-item">
 			          	<NavLink to="/servicios" className="nav-link">Servicios</NavLink>
 			        </li>
-					<li className="nav-item"> {/*Se agrega un nuevo item enel navbar*/}
-			          	<NavLink to="/galeria" className="nav-link">Galeria </NavLink>
+					<li className="nav-item"> {/*Se agrega un nuevo item en el navbar*/}
+			          	<NavLink to="/galeria" className="nav-link">Galeria</NavLink>
 			        </li>
 			        <li className="nav-item">
-			          	<NavLink to="/contacto" className="nav-link">Contacto </NavLink>
+			          	<NavLink to="/contacto" className="nav-link">Contacto</NavLink>
 			        </li>
 
 			    </ul>

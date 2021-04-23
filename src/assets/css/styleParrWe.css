@@ -7,10 +7,18 @@
     box-sizing: border-box;
 }
 
-.fuente{ /*costum del parrafo*/
+.fuente{ /*costum de los parrafos*/
     font-family: 'Montserrat', sans-serif;
-    font-weight: 400; 
+    font-weight: 400;
     text-align: justify;
     letter-spacing: 0.35px; /*Espaciado de letra*/ 
     color: #525151; /*color fuente : Very dark grayish red.*/
+}
+
+.contenedor-texto-home{ /*Funcion que se usa para centrar tanto vertical como horizontalmente el contenido del texto de home*/
+    display: flex;
+    flex-direction: column; /*Direccion de los elementos*//*row; no es row ya que contiene elemento header y parrafo son diferentes para centrar*/
+    flex-wrap: wrap; /**/
+    justify-content: center;/*Centra de forma horizontal*/
+    align-items: center;/*centra de forma vertical*/
 }
