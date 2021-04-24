@@ -32,12 +32,12 @@ class Nosotros extends React.Component {
 
 				<div className="container" style={{padding: '0 60px',}}> {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
 					<div className= "row"> {/*se crea segunda clase hija de container*/}
-						<div className="col-lg-6 mt-2"> {/*Se crea la primera columna que va a contener el parrafo de nosotros*/}
+						<div className="col-lg-6 mt-2 contenedor-texto-home"> {/*Se crea la primera columna que va a contener el parrafo de nosotros*//*Se llama la funcion de styleParrWe.css para centrar ambos parrafos horizontalmente al container*/}
 							<Parrafo /> {/*Se llama al componente Parrafo*/}
 						</div>
 
 						<div className="col-lg-6"> {/*Se crea la segunda columna que va a contener la foto de nosotros*/}
-							<img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto Nosotros"/>
+							<img src={process.env.PUBLIC_URL + 'imagenes/Dianne.png'} className= "mx-auto d-block img-fluid rounded" alt="Foto Nosotros"/>
 						</div>
 
 					</div>
