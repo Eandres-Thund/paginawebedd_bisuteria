@@ -7,8 +7,7 @@ class Mapa extends React.Component {
     return (
  
         <div className="embed-responsive embed-responsive-4by3">
-            {/*<iframe className="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.98716990164!2d-75.59205477405675!3d6.231161158839353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429b703fb27a1%3A0xdacf4ad5797fcb2c!2sAlpujarra%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1618277108037!5m2!1ses!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>*/}
-            <iframe className="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15864.98716990164!2d-75.59205477405675!3d6.231161158839353!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4429b703fb27a1%3A0xdacf4ad5797fcb2c!2sAlpujarra%2C%20Medell%C3%ADn%2C%20Antioquia!5e0!3m2!1ses!2sco!4v1618277108037!5m2!1ses!2sco" width="600" height="450" allowFullScreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15908.488970411174!2d-75.69127478114244!3d4.572051236368507!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e38f53085176cc1%3A0xef8a455125e5b560!2sLa%20Pola%2C%20Circasia%2C%20Quind%C3%ADo!5e0!3m2!1ses!2sco!4v1619284821549!5m2!1ses!2sco" width="600" height="450" style={{border:'0',}} allowfullscreen="" loading="lazy"></iframe>
         </div>
  
     )
