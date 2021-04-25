@@ -32,7 +32,7 @@ class Home extends React.Component {
 
 			<main role="main" className="flex-shrink-0 mt-5"> {/*flex-shrink, especifica el factor de contracción de un flex item.*/}
 
-		        <div className="container" style={{padding: '0 60px 0 60px',}}> {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
+		        <div className="container" style={{padding: '0 60px',}}> {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
 
 					<Slider /> {/*Se llama al componente Slider*/}
 		  	  		
