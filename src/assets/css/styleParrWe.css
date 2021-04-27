@@ -22,3 +22,16 @@
     justify-content: center;/*Centra de forma horizontal*/
     align-items: center;/*centra de forma vertical*/
 }
+
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 768px){ /*Dar un pequeño margen superior a las opciones de manillas y collares, al volverse una columna en dispositivos*/
+    #manillas-home{
+        margin-top: 20px;
+    }
+
+    #collares-home{
+        margin-top: 20px;
+    }
+}

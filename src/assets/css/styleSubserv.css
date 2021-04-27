@@ -23,3 +23,15 @@ html{
 	font-weight: normal; /*ancho de fuente normal*/
 	padding-top: 40px;	/*achica solo la parte de arriba*/
 }
+
+
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 768px){
+	#sec-img-subserv-1,
+	#sec-img-subserv-2,
+	#sec-img-subserv-3{
+		margin-top: 5px;
+	}
+}

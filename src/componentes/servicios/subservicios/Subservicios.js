@@ -23,11 +23,11 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
 					</p>
 
                     <div className= "row">
-                        <div className= "col-lg-6"> {/*Se usa para dividir el espacio de trabajo en un ancho de 50% del div padre*/}
+                        <div className= "col-md-6"> {/*Se usa para dividir el espacio de trabajo en un ancho de 50% del div padre*/}
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 1 izquierda"/>
                         </div>
 
-                        <div className= "col-lg-6"> {/*Se usa para dividir el espacio de trabajo en un ancho de 50% del div padre*/}
+                        <div className= "col-md-6" id="sec-img-subserv-1"> {/*Se usa para dividir el espacio de trabajo en un ancho de 50% del div padre*/}
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 1 derecha"/>
                         </div>
                     </div>
@@ -41,11 +41,11 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
 					</p>
 
                     <div className= "row">
-                        <div className= "col-lg-6">
+                        <div className= "col-md-6">
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 2 izquierda"/>
                         </div>
 
-                        <div className= "col-lg-6">
+                        <div className= "col-md-6" id="sec-img-subserv-2">
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 2 derecha"/>
                         </div>
                     </div>
@@ -59,11 +59,11 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
 					</p>
 
                     <div className= "row">
-                        <div className= "col-lg-6">
+                        <div className= "col-md-6">
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 3 izquierda"/>
                         </div>
 
-                        <div className= "col-lg-6">
+                        <div className= "col-md-6" id="sec-img-subserv-3">
                             <img src={process.env.PUBLIC_URL + 'imagenes/tour2021.jpg'} className= "mx-auto d-block img-fluid rounded" alt="Foto servicio 3 derecha"/>
                         </div>
                     </div>

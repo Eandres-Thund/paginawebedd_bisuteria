@@ -1,0 +1,14 @@
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 768px){
+    
+    #fila-1-pendientes,
+    #fila-2-pendientes,
+    #fila-1-manillas,
+    #fila-2-manillas,
+    #fila-1-collares,
+    #fila-2-collares{
+        margin-bottom: 24px;
+    }
+}

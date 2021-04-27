@@ -45,3 +45,15 @@ aside .indice a {
 	color: #FFCD48; /*color de letra: Light Orange*/
     letter-spacing: 0.35px; /*Espaciado de letra*/  
 }
+
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 992px){	
+
+	aside{ /*hace que el temario se quede estatico sin desplazarce dentro la interfaz del dispositivo movil */
+		position: static;
+		margin: 40px 0 0 0;
+		padding: 10px;
+	}
+}

@@ -11,3 +11,10 @@
 .menuNav{ /*cambia el fondo de color del navbar*/
     background-color: var(--fondoNav);
 }
+
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 900px){
+    
+}
