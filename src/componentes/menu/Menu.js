@@ -17,6 +17,10 @@ class Menu extends React.Component { //Componente para crear el navbar ppal
   	return (
 		
   		<nav className="navbar navbar-expand-md navbar-dark menuNav"> {/*menuNav es un estilo del styleMenu.css*/}
+			<NavLink to="/" className="navbar-brand">Bienvenido</NavLink>
+			<button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+		     	<span className="navbar-toggler-icon"></span>
+		    </button>
 
 		    <div className="collapse navbar-collapse" id="navbarCollapse">
 				

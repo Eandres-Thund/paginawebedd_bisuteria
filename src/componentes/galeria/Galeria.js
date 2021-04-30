@@ -22,7 +22,7 @@ class Galeria extends React.Component{
 
             <Titulopag /> {/*Se llama al componente Titulopag*/}
 
-            <div className= "container" style={{padding: '0 300px',}}> {/*Se da un estilo de padding para volver mas pequeña la barra del menu*/}
+            <div className= "container"> {/*Se da un estilo de padding para volver mas pequeña la barra del menu*/}
     
                 <Menu /> {/*Se llama al componente Menu*/}
                 

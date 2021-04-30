@@ -29,12 +29,19 @@
 .container .titulo h1{ /*se cambia el tipo y tamaño de fuente al h1*/
     font-family: 'Satisfy', cursive;
     font-size: 500%
-
 }
 
 .container .titulo h3{  /*se cambia el tipo y tamaño de fuente al h3*/
     font-family: 'Montserrat', sans-serif;
     font-size: 150%;
     font-weight: 700; 
+}
 
+/* * ============================== */ /*Responsive*/
+/* * ====== MEDIA QUERIES ========= */
+/* * ============================== */
+@media screen and (max-width: 576px){
+    .container .titulo h1{
+        font-size: 400%
+    }
 }
