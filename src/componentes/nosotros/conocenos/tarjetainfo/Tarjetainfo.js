@@ -7,7 +7,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 //Estilos
-import '../../../assets/css/styleTarjetainfo.css';
+import '../../../../assets/css/styleTarjetainfo.css';
 
 export default function Tarjetainfo({ //Contiene todas las llaves de data y la funcion de mostrarAdicional
     nombre,
@@ -15,22 +15,33 @@ export default function Tarjetainfo({ //Contiene todas las llaves de data y la f
     estudios,
     comida,
     edad,
+    urlImg,
     adicional,
     mostrarAdicional,
 }){
     
-    return ( //Da estructura a la visualizacion de las tarjetas de los animales
-        <div className="animal-wrapper"> {/*Esta clase se llama de Tarjetainformacion.css*/}
-            <h2>{nombre}</h2>   {/*Esta etiqueta contiene la llave nombre*/}
-            <h3>{cargo}</h3> {/*Esta etiqueta contiene la llave cargo*/}
-            <h4>{estudios}</h4> {/*Esta etiqueta contiene la llave estudios*/}
-            <h4>{edad} años</h4> {/*Esta etiqueta contiene la llave estudios*/}
+    return ( //Da estructura a la visualizacion de las tarjetas de los empleados
+            <div className="card"> {/*div padre de content*/}
 
-            <div>{comida.join(", ")}</div> {/*Este div contiene la llave dieta, se le agrega una , y un espacio para poeder visualizarlo correctamente*/}
+                    <div className="content"> {/*div padre de img-text*/}
 
-            <button onClick={() => mostrarAdicional(adicional)}>Mas Info</button> {/*Crea un boton con etiqueta Mas info para llamar la funcion mostrarAdicional con su parametro*/}           
+                        <div className="img-text"> {/*div padre del img-box y los textos de la lista*/}
 
-        </div>
+                            <div className="img-box">
+                                <img src= {process.env.PUBLIC_URL + `${urlImg}`} className= "mx-auto d-block img-fluid rounded" alt="Imagen Izquierda home"/> {/*Se añaden clases para centrar horizontalmente, ancho de 100%, altura:auto y punta redonda*/}
+                            </div>
+
+                            <h3 className="nombre">{nombre}<br/><span className="cargo">{cargo}</span></h3>
+                            <p className="estudios">Estudios:<br/><span>{estudios}</span></p>
+                            <p className="edad">Edad: <br/><span>{edad} años</span></p>
+                            <p className="comida">Comida: <br/><span>{comida.join(", ")}</span></p>
+
+                            <button className="btn-moreInfo" onClick={() => mostrarAdicional(adicional)}>Mas Info</button> {/*Crea un boton con etiqueta Mas info para llamar la funcion mostrarAdicional con su parametro*/}
+
+                        </div>
+                    </div>
+            </div>
+
     )
 }
 
@@ -50,6 +61,7 @@ Tarjetainfo.propTypes = { //Se definen las llaves que faltan dentro de la data o
     estudios: PropTypes.string.isRequired, //estudios es de tipo string.
     mostrarAdicional: PropTypes.func.isRequired, //mostrarAdicional es una funcion.
     edad: PropTypes.number.isRequired, //edad es de tipo entero.
+    urlImg: PropTypes.string.isRequired, //urlImg es de tipo string.
   }
 
 Tarjetainfo.defaultProps = { //Al no encontrar la informacion de la llave muestra por defecto

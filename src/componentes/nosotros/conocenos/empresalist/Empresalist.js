@@ -6,9 +6,10 @@ export default [ //Arreglo que contiene objetos
         estudios: "Comercio exterior",
         edad: 30,
         comida: ["Vegetales"],
+        urlImg: 'imagenes/persona1.png',
 
         adicional: {
-            link: "https://www.instagram.com/",
+            link: "https://www.instagram.com/",            
         },
     },
 
@@ -18,6 +19,7 @@ export default [ //Arreglo que contiene objetos
         estudios: "Diseñadora Grafica",
         edad: 22,
         comida: ["Vegetales, Salchipapas, Gourmet"],
+        urlImg: 'imagenes/persona2.png',
 
         adicional: {
             link: "https://www.kwai.com/",
@@ -31,6 +33,7 @@ export default [ //Arreglo que contiene objetos
         estudios: "Marketing Comercial",
         edad: 25,
         comida: ["Omnivora"],
+        urlImg: 'imagenes/persona1.png',
     },
 
 ]

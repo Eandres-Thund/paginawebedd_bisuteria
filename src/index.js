@@ -18,7 +18,6 @@ import Nosotros from './componentes/nosotros/Nosotros';
 import Servicios from './componentes/servicios/Servicios';
 import Contacto from './componentes/contacto/Contacto';
 import Galeria from './componentes/galeria/Galeria';
-import Conocenos from './componentes/conocenos/Conocenos'
 
 
 //Configuración de la rutas del Sitio Web 
@@ -34,8 +33,6 @@ ReactDOM.render(
           component = { Servicios }/>
           <Route path = '/galeria' 
           component = { Galeria }/> {/*Se agrega nueva ruta para Galeria*/}
-          <Route path = '/conocenos' 
-          component = { Conocenos }/> {/*Se agrega nueva ruta para Conocenos*/}
           <Route path = '/contacto'
           component = { Contacto }/>
         </Switch> 

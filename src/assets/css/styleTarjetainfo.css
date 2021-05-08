@@ -7,11 +7,127 @@
     box-sizing: border-box;
 }
 
-.animal-wrapper {
-    border: 1px solid black;
-    margin: 10px;
-    padding: 10px;
+.fondo{
+    position: relative;
+    width: 100%;
+    /*Centra todos los elementos hijos del div fondo*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*.fondo::before{
+    content: '';
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(#ffc107,#e91e63);
+    border-radius: 50%;
+    transform: translate(-500px, -120px);
+}
+
+.fondo::after{
+    content: '';
+    position: absolute;
     width: 200px;
+    height: 200px;
+    background: linear-gradient(#2196f3,#31ff38);
+    border-radius: 50%;
+    transform: translate(500px, 120px);
+}*/
+
+.fondo .box{/**/
+    position: relative;
+    padding: 20px;
+    z-index: 1;
+
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.fondo .card{ /*Setting al contenedor del card*/
+    position: relative;
+    width: 300px;
+    height: 480px;
+    background: #fff;
+    box-shadow: 0 15px 25px rgba(0,0,0,.025); /* offset-x | offset-y | blur-radius | color */
+                                                                        /*Cuando mayor sea este valor, mayor sera la difuminación, por consecuencia la sombra se vuelve más grande y ligera.*/
+    border-radius: 16px;
+
+    /*Centra lo elementos*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fondo .card .content,
+.fondo .card .img-text{/*Accede a los contenido global de la informacion del card, div img-text y .content, poder centrar el texto y los iconos que estaban alineados a la derecha*/
+    display: flex; 
+                   
+    align-items: center; /*Centra verticalmente*/
+    justify-content: center;/*Centra horizontalmente*/
+    flex-direction: column;/*Vuelve y organiza los elementos para que queden en columna, pero esta vez centrados en la card*/
+}
+
+.fondo .card .img-text .img-box{ /*Setting al contenedor de la imagen*/
+    position: relative; /*Utiliza este posicionammiento para que junto con las dos lineas siguientes, sacar la imagen del contenedor card y la pone por delante del texto*/
+                        /*Al momento de de trabajar un elemento hijo con absolute el elemento inmediato padre debe tener relative*/
+    width: 120px;
+    height: 120px;
+    overflow: hidden; /*Esconde parte de la imagen que queda por fuera de las dimensiones dadas en height y width*/
+    border-radius: 50%; /*El contenedor de la imagen se convierte en un circulo*/
+    margin-bottom: 15px; /*Separa el contenedor de la imagen del texto h4*/
+}
+
+.fondo .card .img-text h3{/*Hasta el momento el texto (h4 y span) estaba alineado a la izquierda*/
+    font-weight: 700;
+    font-size: 1.4em;
+    line-height: 1.2em;
+    color: #2fa1ff;
+
+    /*Centra el texto*/
+    text-align: center;
+    margin-bottom: 17px;
+}
+
+.fondo .card .img-text h3 .cargo{
+    font-weight: 400;
+    color: #777;
+    font-size: 0.75em;
+}
+
+.fondo .card .img-text p{
+    color: #3c3333;
+    font-weight: 700;
+    text-align: center;
+}
+
+.fondo .card .img-text p.estudios span,
+.fondo .card .img-text p.comida span,
+.fondo .card .img-text p.edad span{
+    font-weight: 400;
+    color: #777;
+}
+
+
+.fondo .card .img-text .btn-moreInfo{
+    padding: 0 10px;
+	margin-bottom: 10px;
+	height: 40px;
+	line-height: 40px;
+	border: none;
+	color: #fff;
+	background: #3c3333;
+	border-radius: 3px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .3s ease all;
+} 
+
+.fondo .card .img-text .btn-moreInfo:hover{
+    background: rgba(60,51,51,0.9);
+
 }
 
 .animal-wrapper button {
@@ -22,15 +138,3 @@
     cursor: pointer;
     margin: 10px 0;
 }
-
-.wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 20px;
-  }
-  
-  .wrapper h1 {
-    text-align: center;
-    width: 100%;
-  }

@@ -11,7 +11,8 @@ import Menu from '../menu/Menu';
 import Parrafo from './parrafo/Parrafo';
 import Footer from '../footer/Footer';
  
- 
+import Accesodata from './conocenos/accesodata/Accesodata';
+
 class Nosotros extends React.Component {
  
 	render() {
@@ -40,8 +41,9 @@ class Nosotros extends React.Component {
 							<div className="col-lg-6"> {/*Se crea la segunda columna que va a contener la foto de nosotros*/}
 								<img src={process.env.PUBLIC_URL + 'imagenes/Dianne.png'} className= "mx-auto d-block img-fluid rounded" alt="Foto Nosotros"/>
 							</div>
-
 						</div>
+
+						<Accesodata />
 					</div>
 	
 				</main>

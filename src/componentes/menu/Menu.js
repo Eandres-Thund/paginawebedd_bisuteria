@@ -38,9 +38,6 @@ class Menu extends React.Component { //Componente para crear el navbar ppal
 					<li className="nav-item"> {/*Se agrega un nuevo item en el navbar*/}
 			          	<NavLink to="/galeria" className="nav-link">Galeria</NavLink>
 			        </li>
-					<li className="nav-item"> {/*Se agrega un nuevo item en el navbar*/}
-			          	<NavLink to="/conocenos" className="nav-link">Conocenos</NavLink>
-			        </li>
 			        <li className="nav-item">
 			          	<NavLink to="/contacto" className="nav-link">Contacto</NavLink>
 			        </li>

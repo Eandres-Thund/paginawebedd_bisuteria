@@ -5,9 +5,6 @@ import React from 'react';
 import Empresalist from '../empresalist/Empresalist'; //data
 import Tarjetainfo from '../tarjetainfo/Tarjetainfo';
 
-//Estilos
-//import './App.css';
-
 /***************************************/
 /************* Funciones ***************/
 /***************************************/
@@ -27,19 +24,20 @@ function Accesodata() {
   
   return(
 
-    <div className= "wrapper"> {/*Se llama la clase wrapper del App.css*/}
-
-      <h1>Tarjeta de informacion por empleado</h1> {/*Se añade un header al viewport*/}
-
-      {/*.map crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos */}
-      {Empresalist.map(empleado => (<Tarjetainfo
-                            key={empleado.nombre} nombre={empleado.nombre} cargo={empleado.cargo}
-                            estudios={empleado.estudios} edad={empleado.edad} comida={empleado.comida}
-                            adicional={empleado.adicional} mostrarAdicional={mostrarAdicional} />) 
-               ) 
-      } 
-      {/*Se llama el componente Tarjetainformacion, con la ruta del valor de cada llave de data.js*/}
-
+    <div className= "fondo"> {/*Se llama la clase fondo del styleTarjetainfo.css*/}
+        
+        <div className= 'box'>
+            
+            {/*.map crea un nuevo array con los resultados de la llamada a la función indicada aplicados a cada uno de sus elementos */}
+            {Empresalist.map(empleado => (<Tarjetainfo
+                                    key={empleado.nombre} nombre={empleado.nombre} cargo={empleado.cargo}
+                                    estudios={empleado.estudios} edad={empleado.edad} comida={empleado.comida}
+                                    urlImg={empleado.urlImg} adicional={empleado.adicional} 
+                                    mostrarAdicional={mostrarAdicional} />) 
+                    ) 
+            } 
+            {/*Se llama el componente Tarjetainfo, con la ruta del valor de cada llave de Empresalist.js*/}
+        </div>
     </div>
 
   );
