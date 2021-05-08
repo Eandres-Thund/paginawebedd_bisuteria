@@ -29,7 +29,7 @@ class Formulario extends React.Component {
             <textarea className="form-control" id="mensaje" required></textarea>
           </div>
  
-          <button type="submit" className="btn btn-primary">Enviar</button>
+          <button type="submit" className="btn btn-moreInfo">Enviar</button>
  
         </form>
  

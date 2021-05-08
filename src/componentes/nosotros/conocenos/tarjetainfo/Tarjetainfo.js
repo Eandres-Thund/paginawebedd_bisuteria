@@ -28,13 +28,13 @@ export default function Tarjetainfo({ //Contiene todas las llaves de data y la f
                         <div className="img-text"> {/*div padre del img-box y los textos de la lista*/}
 
                             <div className="img-box">
-                                <img src= {process.env.PUBLIC_URL + `${urlImg}`} className= "mx-auto d-block img-fluid rounded" alt="Imagen Izquierda home"/> {/*Se añaden clases para centrar horizontalmente, ancho de 100%, altura:auto y punta redonda*/}
+                                <img src= {process.env.PUBLIC_URL + `${urlImg}`} className= "mx-auto d-block img-fluid rounded" alt="Imagenes lista de empleadas"/> {/*Se añaden clases para centrar horizontalmente, ancho de 100%, altura:auto y punta redonda*/}
                             </div>
 
-                            <h3 className="nombre">{nombre}<br/><span className="cargo">{cargo}</span></h3>
-                            <p className="estudios">Estudios:<br/><span>{estudios}</span></p>
-                            <p className="edad">Edad: <br/><span>{edad} años</span></p>
-                            <p className="comida">Comida: <br/><span>{comida.join(", ")}</span></p>
+                            <h3 className="nombre">{nombre}<br/><span className="cargo">{cargo}</span></h3> {/*Esta etiqueta contiene la llave nombre*/} {/*Esta etiqueta contiene la llave cargo*/}
+                            <p className="estudios">Estudios:<br/><span>{estudios}</span></p> {/*Esta etiqueta contiene la llave estudios*/}
+                            <p className="edad">Edad: <br/><span>{edad} años</span></p> {/*Esta etiqueta contiene la llave edad*/}
+                            <p className="comida">Comida: <br/><span>{comida.join(", ")}</span></p> {/*Este div contiene la llave comida, se le agrega una , y un espacio para poder visualizarlo correctamente*/}
 
                             <button className="btn-moreInfo" onClick={() => mostrarAdicional(adicional)}>Mas Info</button> {/*Crea un boton con etiqueta Mas info para llamar la funcion mostrarAdicional con su parametro*/}
 

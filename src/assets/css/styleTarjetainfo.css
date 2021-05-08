@@ -88,7 +88,7 @@
 
     /*Centra el texto*/
     text-align: center;
-    margin-bottom: 17px;
+    margin-bottom: 30px;
 }
 
 .fondo .card .img-text h3 .cargo{
@@ -101,6 +101,7 @@
     color: #3c3333;
     font-weight: 700;
     text-align: center;
+    margin-bottom: 15px;
 }
 
 .fondo .card .img-text p.estudios span,
@@ -111,7 +112,7 @@
 }
 
 
-.fondo .card .img-text .btn-moreInfo{
+.btn-moreInfo{ /*antes tenia esta dirección .fondo .card .img-text (igual en el hover) pero se necesito los Setting en home*/
     padding: 0 10px;
 	margin-bottom: 10px;
 	height: 40px;
@@ -125,16 +126,7 @@
 	transition: .3s ease all;
 } 
 
-.fondo .card .img-text .btn-moreInfo:hover{
+.btn-moreInfo:hover{
     background: rgba(60,51,51,0.9);
 
-}
-
-.animal-wrapper button {
-    font-size: 1em;
-    border: 1px solid black;
-    padding: 10;
-    background: none;
-    cursor: pointer;
-    margin: 10px 0;
 }

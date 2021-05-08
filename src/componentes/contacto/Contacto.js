@@ -28,7 +28,7 @@ class Contacto extends React.Component {
 	
 					<div className="container">
 	
-						<h1 className="mb-5 fuente">Contacto</h1>
+						<h1 className="mb-5 fuente">Contactanos para alguna PQRS</h1>
 	
 						<div className="row">
 	
