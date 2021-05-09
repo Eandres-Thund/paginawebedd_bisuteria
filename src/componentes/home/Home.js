@@ -33,9 +33,11 @@ class Home extends React.Component {
 
 				<main role="main" className="flex-shrink-0 mt-5"> {/*flex-shrink, especifica el factor de contracción de un flex item.*/}
 
-					<div className="container" style={{padding: '0 60px',}}> {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
+					<div className="container" > {/*Se da un estilo de padding para volver el espacio de horizontal un poco mas pequeño*/}
 
-						<Slider /> {/*Se llama al componente Slider*/}
+						<div className="carrusel">
+							<Slider /> {/*Se llama al componente Slider*/}
+						</div>
 						
 						<div className="mt-3"> {/*Deja un pequeño margen superior entre el compoenente Slider e Imagenes */}
 							<Imagenes /> {/*Se llama al componente Imagenes*/}
