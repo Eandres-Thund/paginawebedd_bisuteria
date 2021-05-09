@@ -1,0 +1,70 @@
+*{ /*costum standar*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.content-footer{ /*Setting al contenedor de todos los iconos*/
+    position: relative;
+    width: 100%;
+
+    /*Centra todos los iconos en el espacio del footer*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sci{/*Accede a la lista no ordenada*/
+    display: flex; /*Los items que estaban en columna ahora estan en fila, pegados seguido de otros sin espacios o margenes*/
+    margin-top: 5px; /*Separa los iconos del hr*/
+}
+
+.sci li{/*Accede a los items de la lista no ordenada*/
+    list-style: none; /*Quita las viñetas*/
+}
+
+.sci li a{ /*Accede a los enlaces de los items de la lista no ordenada*/
+    position: relative; /*Se usa para poder modificar el espacio (redimensionar con los dos lienas siguientes) de cada una de los enlaces*/
+    width: 50px;
+    height: 50px;
+    color: #2fa1ff; /*Color a los iconos*/
+    background: #e9f5ff;/*Fondo de los iconos*/
+    /*background-color: #2fa1ff;/*Se uso para mostrar espacio redimensionado*/
+    margin: 0 5px; /*arriba y abajo | derecha e izquierda*/
+
+    /*Hasta aca el espacio de los icono era aun pequeño*/
+    display: flex;
+    justify-content: center;/*Centra horizontalmente los iconos, ya que estaban en la esquina superior izquierda*/
+    align-items: center; /*Centra verticalmente los iconos*/
+    text-decoration: none; /*Se asegura que los enlaces no tenga el subrayado por defecto*/
+    border-radius: 50%;/*Coloca redondo el espacio de los enlaces*/
+    font-size: 30px;
+
+    transition: 0.5s; /*Animacion al momento de carga la pagina, los icono van aumentando el tamaño*/
+}
+
+.sci li a:hover{/*Este setting se hace despues del a:before y a:hover:before, respectivamente para mostrar los iconos*/
+    color: #fff;
+}
+
+.sci li a .iconify{ /*Se accede a la clase iconify para colocar por encima los iconos del before*/
+    position: relative;
+    z-index: 1000; /*Siempre los elementos que tengan esta propiedad quedan por encima de los demas elementos de la pagina*/
+}
+
+.sci li a:before{/*Se llama la pseudoclase before (capa) en los enlaces para la animacion*/
+    content: ''; /*Se deja un contenido vacio*/
+    position: absolute; /*Los iconos se colocan detras "desapareciendolos" y solo queda el espacio de los enlaces */
+    width: 100%;
+    height: 100%;
+    background: #3c3333;
+    border-radius: 50%;
+    
+    transform: scale(0);
+    transition: 0.5s;
+}
+
+.sci li a:hover:before{ /*Se llama la pseudoclase hover para poder modificar la escala de before*/
+    /*Animacion junto el setting de before y al pasar por encima el cursor pasa el espacio del enlace de pequño a grande*/
+    transform: scale(1);
+}

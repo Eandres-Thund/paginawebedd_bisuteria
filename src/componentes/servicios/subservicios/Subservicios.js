@@ -16,10 +16,10 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
         return(
             <div className="contenido"> {/*llama al div con la clase contenido del estyleSubserv.css*/}
 				<div className="post"> {/*llama al div con la clase post*/}
-					<h1 className="tituloSub" id= "servicio-1">Servicio #1</h1> {/*llama la clase titulo del estyleSubserv.css*/}
+					<h1 className="tituloSub" id= "servicio-1">Arreglos</h1> {/*llama la clase titulo del estyleSubserv.css*/}
 					
 					<p> {/*configura el contenido del elemento p con lo realizado en estyleSubserv.css*/}
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque erat tincidunt hendrerit. Cras lobortis id diam sit amet consectetur. Suspendisse non pulvinar justo, ac commodo velit. Quisque maximus dolor ac magna molestie, sit amet commodo velit congue. Maecenas non dolor ut elit malesuada congue. Phasellus euismod nisi pharetra ante rutrum dignissim. Ut eget tortor ut sapien egestas sollicitudin. Aenean pulvinar varius augue, ac euismod tortor faucibus at. In commodo sodales turpis nec vehicula. Mauris luctus, risus non iaculis porttitor, felis eros sagittis enim, sed ultricies lacus magna quis urna.
+							Se realizan todo tipo de arreglos en articulos (cadenas, collares, pulseras, anillos, accesorios para el equipaje, entre otros) relacionados con cristal miyuki.<br/> Se emplea todo tipo de tecnicas de bisuteria y herramientas especificas con la finalidad de dar el mejor acabado al producto.
 					</p>
 
                     <div className= "row">
@@ -34,10 +34,10 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
 			    </div>
 
                 <div className="post"> {/*llama al div con la clase post estyleSubserv.css*/}
-					<h1 className="tituloSub" id= "servicio-2">Servicio #2</h1> {/*llama la clase titulo del estyleSubserv.css*/}
+					<h1 className="tituloSub" id= "Webinar ">Webinars</h1> {/*llama la clase titulo del estyleSubserv.css*/}
 					
 					<p> {/*configura el contenido del elemento p con lo realizado en estyleSubserv.css*/}
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque erat tincidunt hendrerit. Cras lobortis id diam sit amet consectetur. Suspendisse non pulvinar justo, ac commodo velit. Quisque maximus dolor ac magna molestie, sit amet commodo velit congue. Maecenas non dolor ut elit malesuada congue. Phasellus euismod nisi pharetra ante rutrum dignissim. Ut eget tortor ut sapien egestas sollicitudin. Aenean pulvinar varius augue, ac euismod tortor faucibus at. In commodo sodales turpis nec vehicula. Mauris luctus, risus non iaculis porttitor, felis eros sagittis enim, sed ultricies lacus magna quis urna.
+							Se  hacen contenidos digitales para dar conocimiento acerca de diferentes tecnicas de bisuteria artesanal en joyeria, usando como materia prima el producto principal de nuestra empresa. Estos webinars van dirigidos a personas que tengan curiosidad o interes acerca de como se diseñan y se crean de cero los productos.
 					</p>
 
                     <div className= "row">
@@ -52,10 +52,10 @@ class Subservicios extends React.Component{ //Contiene informacion de los servic
 			    </div>
 
                 <div className="post"> {/*llama al div con la clase post estyleSubserv.css*/}
-					<h1 className="tituloSub" id= "servicio-3">Servicio #3</h1> {/*llama la clase titulo del estyleSubserv.css*/}
+					<h1 className="tituloSub" id= "servicio-3">Ventas</h1> {/*llama la clase titulo del estyleSubserv.css*/}
 					
 					<p> {/*configura el contenido del elemento p con lo realizado en estyleSubserv.css*/}
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod scelerisque erat tincidunt hendrerit. Cras lobortis id diam sit amet consectetur. Suspendisse non pulvinar justo, ac commodo velit. Quisque maximus dolor ac magna molestie, sit amet commodo velit congue. Maecenas non dolor ut elit malesuada congue. Phasellus euismod nisi pharetra ante rutrum dignissim. Ut eget tortor ut sapien egestas sollicitudin. Aenean pulvinar varius augue, ac euismod tortor faucibus at. In commodo sodales turpis nec vehicula. Mauris luctus, risus non iaculis porttitor, felis eros sagittis enim, sed ultricies lacus magna quis urna.
+							Nuestros productos pueden se adquiridos por los clientes al por mayor y al detal.
 					</p>
 
                     <div className= "row">
