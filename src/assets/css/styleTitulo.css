@@ -37,6 +37,11 @@
     font-weight: 700; 
 }
 
+
+.carrusel{
+    padding: 0 60px;
+}
+
 /* * ============================== */ /*Responsive*/
 /* * ====== MEDIA QUERIES ========= */
 /* * ============================== */
@@ -45,3 +50,16 @@
         font-size: 400%
     }
 }
+
+@media screen and (max-width: 768px){
+    .carrusel{
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .carrusel{
+       display: none;
+    }
+}
+    
